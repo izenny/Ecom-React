@@ -5,12 +5,12 @@ import { UserContext } from "../Contexts/UserContexts";
 const Navbar = () => {
   const {logout} = useContext(UserContext)
   return (
-    <div className="flex w-full h-16 bg-green-50 items-center justify-around">
+    <div className="flex w-full fixed h-16 bg-green-50 items-center justify-around">
       <div className="pl-5">
         <h2 className="text-3xl font-serif font-semibold ">Ecom</h2>
       </div>
       <div className="flex gap-5 ">
-        <Link to={'home'}>
+        <Link to={'/home'}>
           <h2>Home</h2>
         </Link>
         <h2>Products</h2>

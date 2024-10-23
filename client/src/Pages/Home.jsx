@@ -5,8 +5,13 @@ import Products from './Products'
 const Home = () => {
   return (
     <div className='h-full'>
-      <Navbar/>
+      <div className='h-16'>
+        <Navbar/>
+      </div>
+      <div className='flex flex-1'>
       <Products/>
+
+      </div>
     </div>
   )
 }
