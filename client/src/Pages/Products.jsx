@@ -1,8 +1,13 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 
 const Products = () => {
+    useEffect(()=>{
+
+    },[])
   return (
-    <div>Products</div>
+    <div>
+
+    </div>
   )
 }
 

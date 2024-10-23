@@ -51,7 +51,7 @@ const App = () => {
   }, [token, navigate]);
 
   return (
-    <div className="h-screen w-full flex justify-center items-center">
+    <div className="h-screen w-full ">
       <Routes>
         <Route path="/login" element={<Login />} />
 
@@ -65,8 +65,6 @@ const App = () => {
         >
           <Route path="product" element={<Products />} />
         </Route>
-
-       
       </Routes>
     </div>
   );
