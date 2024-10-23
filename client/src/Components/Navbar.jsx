@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
+import { UserContext } from "../Contexts/UserContexts";
 
 const Navbar = () => {
+  const {logout} = useContext(UserContext)
   return (
     <div className="flex w-full h-16 bg-green-50 items-center justify-around">
       <div className="pl-5">
@@ -17,7 +19,7 @@ const Navbar = () => {
       </div>
       <div className="flex items-center gap-6">
         <div>User</div>
-        <button className="cursor-pointer  bg-blue-100 p-2 rounded-lg hover:scale-105">
+        <button onClick={logout} className="cursor-pointer  bg-blue-100 p-2 rounded-lg hover:scale-105">
           Logout
         </button>
       </div>
