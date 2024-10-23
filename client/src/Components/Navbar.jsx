@@ -10,7 +10,7 @@ const Navbar = () => {
         <h2 className="text-3xl font-serif font-semibold ">Ecom</h2>
       </div>
       <div className="flex gap-5 ">
-        <Link to={'/home'}>
+        <Link to={'/user/home'}>
           <h2>Home</h2>
         </Link>
         <h2>Products</h2>

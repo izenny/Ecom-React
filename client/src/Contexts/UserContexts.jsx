@@ -12,14 +12,14 @@ export const UserProvider = ({ children }) => {
     setUser(userdata);
     setToken(authToken);
     localStorage.setItem("token", authToken);
-    navigate("/home");
+    // navigate("/home");
   };
 
   const logout = () => {
     setUser(null);
     setToken(null);
     localStorage.removeItem("token");
-    navigate("/login");
+    // navigate("/login");
   };
 
   return (
