@@ -7,6 +7,9 @@ import Home from "./Pages/Home";
 import ProductView from "./Pages/ProductView";
 import Products from "./Pages/Products";
 import { UserContext } from "./Contexts/UserContexts";
+import Cart from "./Pages/Cart";
+import Profile from "./Pages/Profile";
+import UserHome from "./Pages/UserHome";
 
 const App = () => {
   const { token } = useContext(UserContext);
@@ -26,7 +29,12 @@ const App = () => {
             </AuthCheck>
           }
         >
-          <Route path="home" element={<Products />} />
+          <Route path="home" element={<UserHome/>} />
+          <Route path="products" element={<Products />} />
+          <Route path="cart" element={<Cart />} />
+          <Route path="profile" element={<Profile />} />
+
+
           <Route path="product/:productId" element={<ProductView />} />
         </Route>
       </Routes>

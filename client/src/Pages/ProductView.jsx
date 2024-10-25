@@ -25,7 +25,7 @@ const ProductView = () => {
     <div className="h-screen flex justify-center items-center w-full ">
       <div className="h-full flex justify-center items-center  ">
         {product ? (
-          <div className="flex flex-col md:flex-row pt-5 justify-center p-2 md:p-10 w-4/5  shadow-lg rounded-2xl items-center">
+          <div className="flex flex-col md:flex-row pt-5 justify-center p-2 md:p-10 w-4/5  shadow-lg border rounded-2xl items-center">
             <div className=" w-1/2 h-[200px]">
               <img
                 src={product.image}
@@ -41,10 +41,10 @@ const ProductView = () => {
 
               <p className="text-4xl font-mono font-bold">${product.price}</p>
               <div className="flex justify-around w-full mt-3 mb-3">
-                <button className="bg-green-100 w-36  p-2 rounded-lg hover:bg-green-400 hover:text-white">
+                <button className="bg-green-100 w-36  p-2 rounded-lg text-lg font-serif hover:scale-110 transition-all duration-200 hover:bg-green-400 hover:text-white">
                   Buy
                 </button>
-                <button className="bg-green-100 w-36 p-2 rounded-lg hover:bg-green-400 hover:text-white">
+                <button className="bg-green-100 w-36 p-2 rounded-lg text-lg font-serif hover:scale-110  transition-all duration-200  hover:bg-green-400 hover:text-white">
                   Cart
                 </button>
               </div>
